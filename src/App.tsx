@@ -4,7 +4,7 @@ import Header from "./Components/Header";
 import About from "./pages/About";
 
 function App() {
-  const [page, setPage ] = useState("about");
+  const [page, setPage] = useState("about");
   const getPage = () => {
     switch (page) {
       case "about":
