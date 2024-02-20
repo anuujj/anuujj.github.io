@@ -1,4 +1,10 @@
-export default function Header() {
+export default function Header({
+  route,
+  page,
+}: {
+  route: (page: string) => void;
+  page: string;
+}) {
   return (
     <header>
       <div className="heading">
@@ -8,18 +14,10 @@ export default function Header() {
       </div>
       <nav>
         <ul>
-          <li>
-            <a>ABOUT ME</a>
-          </li>
-          <li>
-            <a>RESUME</a>
-          </li>
-          <li>
-            <a>PROJECTS</a>
-          </li>
-          <li>
-            <a>CONTACT</a>
-          </li>
+          <li onClick={() => route("about")}>ABOUT ME</li>
+          <li onClick={() => route("resume")}>RESUME</li>
+          <li onClick={() => route("projects")}>PROJECTS</li>
+          <li onClick={() => route("contact")}>CONTACT</li>
         </ul>
       </nav>
     </header>
