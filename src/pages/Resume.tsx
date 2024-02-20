@@ -27,6 +27,7 @@ export default function Resume() {
         <button>DOWNLOAD CV</button>
         {experience.map((exp) => (
           <Experience
+            key={exp.date}
             date={exp.date}
             title={exp.title}
             company={exp.company}
@@ -37,6 +38,7 @@ export default function Resume() {
         <h3>Education</h3>
         {education.map((edu) => (
           <Experience
+            key={edu.date}
             date={edu.date}
             title={edu.title}
             company={edu.company}
