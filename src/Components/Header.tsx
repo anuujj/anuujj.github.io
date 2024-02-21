@@ -1,3 +1,4 @@
+import "../styles/header.css";
 export default function Header({
   route,
   page,
@@ -11,6 +12,11 @@ export default function Header({
         <h1 className="name">Anuj</h1>
         <div className="slash">/</div>
         <h2 className="designation">Software Engineer</h2>
+        <div className="hamburger">
+          <button>
+            <img src="hamburger.svg" alt="menu" />
+          </button>
+        </div>
       </div>
       <nav>
         <ul>
