@@ -2,9 +2,11 @@ import "../styles/header.css";
 export default function Header({
   route,
   page,
+  openMenu
 }: {
   route: (page: string) => void;
   page: string;
+  openMenu : ()=>void;
 }) {
   return (
     <header>
@@ -13,7 +15,7 @@ export default function Header({
         <div className="slash">/</div>
         <h2 className="designation">Software Engineer</h2>
         <div className="hamburger">
-          <button>
+          <button onClick={openMenu}>
             <img src="hamburger.svg" alt="menu" />
           </button>
         </div>

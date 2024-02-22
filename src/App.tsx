@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Drawer from "./Components/Drawer";
 
 function App() {
   const validPages = ["about", "resume", "projects", "contact"];
@@ -15,31 +16,46 @@ function App() {
   }
 
   const [page, setPage] = useState(initialPage);
-  const changePage = (newPage:string) => {
-    if(newPage === page) return; 
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const changePage = (newPage: string) => {
+    if (newPage === page) return;
     setPage(newPage);
-    window.history.pushState(null, '', newPage);
+    window.history.pushState(null, "", newPage);
   };
 
   useEffect(() => {
     const handlePopState = () => {
-      const newPage = window.location.pathname.substring(1) || 'about';
+      const newPage = window.location.pathname.substring(1) || "about";
       setPage(newPage);
     };
-  
-    window.addEventListener('popstate', handlePopState);
-  
+
+    window.addEventListener("popstate", handlePopState);
+
     return () => {
-      window.removeEventListener('popstate', handlePopState);
+      window.removeEventListener("popstate", handlePopState);
     };
   }, []);
   return (
     <>
-      <Header route={changePage} page={page}/>
-      {page==="about" && <About />}
-      {page==="resume" && <Resume />}
-      {page==="projects" && <Projects />}
-      {page==="contact" && <Contact />}
+      <Drawer
+        isOpen={isMenuOpen}
+        openFrom="top"
+        onClose={() => setMenuOpen(false)}
+      >
+        <ul>
+          <li>about</li>
+          <li>resume</li>
+        </ul>
+      </Drawer>
+      <Header
+        route={changePage}
+        page={page}
+        openMenu={() => setMenuOpen(true)}
+      />
+      {page === "about" && <About />}
+      {page === "resume" && <Resume />}
+      {page === "projects" && <Projects />}
+      {page === "contact" && <Contact />}
     </>
   );
 }

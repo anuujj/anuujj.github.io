@@ -1,0 +1,71 @@
+.drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px; /* Adjust width as needed */
+    height: 100%;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  .drawer-content {
+    padding: 20px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .drawer-left {
+    transform: translateX(-100%);
+  }
+  
+  .drawer-right {
+    transform: translateX(100%);
+  }
+  
+  .drawer-top {
+    transform: translateY(-100%);
+  }
+  
+  .drawer-bottom {
+    transform: translateY(100%);
+  }
+  
+  .drawer.open {
+    transform: translate(0);
+  }
+  
+  .slide-in {
+    animation: slide-in 0.3s ease-in-out forwards;
+  }
+  
+  .slide-out {
+    animation: slide-out 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translate(-100%);
+    }
+    to {
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes slide-out {
+    from {
+      transform: translate(0);
+    }
+    to {
+      transform: translate(-100%);
+    }
+  }
+  

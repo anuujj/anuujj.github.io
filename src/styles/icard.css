@@ -1,11 +1,12 @@
 .icard {
   box-sizing: border-box;
   position: relative;
+  top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: calc(100%-60px);
+  width: 80%;
   height: 48rem;
   background-color: #f4ece6;
   padding: 3rem 3rem 10rem 3rem;
@@ -24,8 +25,9 @@
   width: 4rem;
   background-color: #0b50ff;
 }
-.icard h2{
-    letter-spacing: 0.25rem;
+.icard h2 {
+  display: none;
+  letter-spacing: 0.25rem;
 }
 .handles {
   width: 100%;
@@ -35,14 +37,36 @@
   left: 0px;
   background-color: #fff;
 }
+.fromIdCard{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 @media (min-width: 930px) {
-  .icard{
+  .icard {
     position: absolute;
     width: 34rem;
     right: -5rem;
-    top: 15rem;
+    top: 8rem;
+  }
+  .icard h2 {
+    display: block;
   }
   .fromIdCard {
     display: none;
+  }
+}
+@media (max-width: 650px) {
+  .icard {
+    height: 42rem;
+  }
+  .avatar {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .fromIdCard{
+    grid-template-columns: 1fr;
   }
 }
