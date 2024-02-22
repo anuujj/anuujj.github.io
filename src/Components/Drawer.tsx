@@ -12,10 +12,11 @@ function Drawer({ openFrom, isOpen, onClose, children }:DrawerProps){
   const [animationClass, setAnimationClass] = useState('');
 
   const closeDrawer = () => {
-    setAnimationClass('slide-out');
+    setAnimationClass('slide-up');
     onClose();
     setTimeout(() => {
       onClose();
+      setAnimationClass('');
     }, 300); // Assuming animation duration is 300ms
   };
 
