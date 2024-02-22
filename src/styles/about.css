@@ -1,0 +1,71 @@
+.about{
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+}
+.icardContainer{
+    position: relative;
+    background-color: #E6DACE;
+}
+.sectionContainer{
+    box-sizing: border-box;
+}
+.about button {
+    width: 13rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    border-radius: 100px;
+}
+section{
+    padding: 18rem 10rem;
+    display: grid;
+    grid-template-rows: 2fr 1fr auto;
+    row-gap: 0.5fr;
+}
+section h1{
+    font-size: 10rem;
+}
+section article {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+#resume{
+    color: #fff;
+    background-color: #0b50ff;
+    margin-right: 1rem;
+}
+#resume:hover{
+    color: #000;
+    background-color: #fff;
+    transition: 0.4s ease-out;
+}
+#projects{
+    background-color: inherit;
+    border : 1px solid #000;
+    transition: 0.4s ease-out;
+}
+#projects:hover{
+    color: #fff;
+    background-color: #0b50ff;
+}
+@media (max-width: 930px) {
+    .about{
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 2fr;
+    }  
+    .fromAbout{
+        display: none;
+    }
+    section{
+        padding: 10rem 10rem; 
+        grid-template-rows: 1fr 2fr;
+    }
+    section h1{
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 650px) {
+    section{
+        padding: 10rem 4rem; 
+    }
+}
