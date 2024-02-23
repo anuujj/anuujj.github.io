@@ -27,26 +27,26 @@ section article {
     font-size: 1.6rem;
     line-height: 1.5;
 }
-#resume{
+#resumeBtn{
     color: #fff;
     background-color: #0b50ff;
     margin-right: 1rem;
 }
-#resume:hover{
+#resumeBtn:hover{
     color: #000;
     background-color: #fff;
     transition: 0.4s ease-out;
 }
-#projects{
+#projectsBtn{
     background-color: inherit;
     border : 1px solid #000;
     transition: 0.4s ease-out;
 }
-#projects:hover{
+#projectsBtn:hover{
     color: #fff;
     background-color: #0b50ff;
 }
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
     .icardContainer{
         display: flex;
         justify-content: center;

@@ -21,8 +21,8 @@ const education = [
 ];
 export default function Resume() {
   return (
-    <div className="resumeContainer">
-      <div className="resume">
+    <div className="bodyContainer">
+      <div className="body">
         <h1>Resume</h1>
         <div className="expHeading">
           <h3>Experience</h3>

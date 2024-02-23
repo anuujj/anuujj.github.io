@@ -1,0 +1,49 @@
+.project{
+    margin: 6rem 0;
+    padding: 7rem 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    background-color: #fff;
+}
+.project p{
+    font-size: 1.6rem;
+}
+.projectTitle{
+    border-left: 0.8rem solid #0b50ff;
+    position: relative;
+    left: -5rem;
+    padding-left: 4rem;
+}
+.projectTitle h2 {
+    color: #0b50ff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.projectTitle h3 {
+    margin:0;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.project picture{
+    grid-column: 2;
+    grid-row: 1/3;
+}
+@media (max-width: 1000px) {
+    .project {
+      padding: 2rem 2rem;
+    }
+    .projectTitle{
+        left:-2rem;
+        padding-left: 1rem;
+    }
+  }
+@media (max-width: 650px){
+    .project{
+        grid-template-columns: 1fr;
+    }
+    .project picture{
+        grid-column: 1;
+        grid-row: 3;
+    }
+}

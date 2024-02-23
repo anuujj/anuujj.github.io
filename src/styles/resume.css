@@ -1,19 +1,19 @@
-.resumeContainer {
+.bodyContainer {
   display: flex;
   justify-content: center;
   background-color: #e6dace;
   padding: 5rem 0;
 }
-.resume {
+.body {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
 }
-.resume > h1 {
+.body > h1 {
   font-size: 3.2rem;
 }
-.resume > h1::before {
+.body > h1::before {
   content: "";
   margin: 0 0.5rem 0.3rem 0;
   display: inline-block;
@@ -91,7 +91,7 @@
   width: 1rem;
   background-color: #0b50ff;
 }
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
   .experienceTab {
     grid-template-columns: 1fr;
     padding: 2rem 2rem;

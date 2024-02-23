@@ -10,7 +10,7 @@ header{
 .hamburger{
     display: none;
 }
-@media (max-width: 930px){
+@media (max-width: 1000px){
     header{
         padding: 1.6rem 3rem;
     }

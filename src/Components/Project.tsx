@@ -9,7 +9,10 @@ export default function Project({
 }) {
   return (
     <div className="project">
-      <h2>{name}</h2>
+      <div className="projectTitle">
+        <h2>{name}</h2>
+        <h3>{"sub heading here"}</h3>
+      </div>
       <p>{description}</p>
       <picture>
         <source srcSet={img[2]} media="(min-width:  800px)" />
