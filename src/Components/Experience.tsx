@@ -13,10 +13,12 @@ export default function Experience({
 }) {
   return (
     <div className="experienceTab">
-      <h3>{date}</h3>
-      <div>{title}</div>
-      <div>{company}</div>
-      <div>{location}</div>
+      <div className="expInfo">
+        <h3>{date}</h3>
+        <div className="title">{title}</div>
+        <div className="company">{company}</div>
+        <div className="location">{location}</div>
+      </div>
       <p>{description}</p>
     </div>
   );

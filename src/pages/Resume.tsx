@@ -1,4 +1,5 @@
 import Experience from "../Components/Experience";
+import "../styles/resume.css";
 
 const experience = [
   {
@@ -20,11 +21,13 @@ const education = [
 ];
 export default function Resume() {
   return (
-    <>
-      <h1>Resume</h1>
-      <div>
-        <h3>Experience</h3>
-        <button>DOWNLOAD CV</button>
+    <div className="resumeContainer">
+      <div className="resume">
+        <h1>Resume</h1>
+        <div className="expHeading">
+          <h3>Experience</h3>
+          <button>DOWNLOAD CV</button>
+        </div>
         {experience.map((exp) => (
           <Experience
             key={exp.date}
@@ -35,7 +38,7 @@ export default function Resume() {
             description={exp.description}
           />
         ))}
-        <h3>Education</h3>
+        <h3 className="eduHeading">Education</h3>
         {education.map((edu) => (
           <Experience
             key={edu.date}
@@ -46,7 +49,7 @@ export default function Resume() {
             description={edu.description}
           />
         ))}
-        <div>
+        <div className="techSkills">
           <h3>Technical Skillset</h3>
           <ul>
             <li>HTML</li>
@@ -62,6 +65,6 @@ export default function Resume() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }
