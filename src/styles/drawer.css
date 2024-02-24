@@ -1,71 +1,151 @@
 .drawer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px; /* Adjust width as needed */
-    height: 100%;
-    background-color: white;
-    transition: transform 0.3s ease-in-out;
-    overflow: hidden;
-    z-index: 1000;
+  position: fixed;
+  background-color: #f4ece6;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.drawer-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.drawer-content li {
+  margin-bottom: 2rem;
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 2rem;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.drawer-right {
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translateX(-100%);
+}
+
+.drawer-left {
+  right: 0;
+  top: 0;
+  height: 100%;
+  transform: translateX(100%);
+}
+
+.drawer-bottom {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+}
+
+.drawer-top {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.drawer.open {
+  animation: slide-in 0.6s ease-in-out forwards,
+    fade-in 0.6s ease-in-out forwards;
+}
+
+.slide-in {
+  animation: slide-in 0.6s ease-in-out forwards;
+}
+
+.slide-out-left {
+  animation: slide-out-left 0.6s ease-in-out forwards,
+    fade-out 0.6s ease-in-out forwards;
+}
+
+.slide-out-right {
+  animation: slide-out-right 0.6s ease-in-out forwards,
+    fade-out 0.6s ease-in-out forwards;
+}
+
+.slide-out-top {
+  animation: slide-out-top 0.6s ease-in-out forwards,
+    fade-out 0.6s ease-in-out forwards;
+}
+
+.slide-out-bottom {
+  animation: slide-out-bottom 0.6s ease-in-out forwards,
+    fade-out 0.6s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(0, 20%);
   }
-  
-  .drawer-content {
-    padding: 20px;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-  
-  .drawer-left {
-    transform: translateX(-100%);
-  }
-  
-  .drawer-right {
-    transform: translateX(100%);
-  }
-  
-  .drawer-top {
-    transform: translateY(-100%);
-  }
-  
-  .drawer-bottom {
-    transform: translateY(100%);
-  }
-  
-  .drawer.open {
+  to {
     transform: translate(0);
   }
-  
-  .slide-in {
-    animation: slide-in 0.3s ease-in-out forwards;
+}
+
+@keyframes slide-out-left {
+  from {
+    transform: translate(0);
   }
-  
-  .slide-out {
-    animation: slide-out 0.3s ease-in-out forwards;
+  to {
+    transform: translate(-100%, 0);
   }
-  
-  @keyframes slide-in {
-    from {
-      transform: translate(-100%);
-    }
-    to {
-      transform: translate(0);
-    }
+}
+
+@keyframes slide-out-right {
+  from {
+    transform: translate(0);
   }
-  
-  @keyframes slide-out {
-    from {
-      transform: translate(0);
-    }
-    to {
-      transform: translate(-100%);
-    }
+  to {
+    transform: translate(100%, 0);
   }
-  
+}
+
+@keyframes slide-out-top {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slide-out-bottom {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20%);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

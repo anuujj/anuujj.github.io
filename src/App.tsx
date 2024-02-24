@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import About from "./pages/About";
@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Drawer from "./Components/Drawer";
 import Footer from "./Components/Footer";
+import Navlist from "./Components/Navlist";
 
 function App() {
   const validPages = ["about", "resume", "projects", "contact"];
@@ -18,10 +19,24 @@ function App() {
 
   const [page, setPage] = useState(initialPage);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const drawerRef = useRef<{ closeDrawer: () => void }>(null);
+  const handleMenuSelection = (newPage: string) => {
+    if (drawerRef.current) {
+      drawerRef.current.closeDrawer();
+    }
+    changePage(newPage);
+  };
   const changePage = (newPage: string) => {
     if (newPage === page) return;
+
+    if (page === "about") {
+      window.history.pushState(null, "", newPage);
+    } else if (newPage !== "about") {
+      window.history.replaceState(["/about"], "", newPage);
+    } else {
+      window.history.replaceState({}, "", newPage);
+    }
     setPage(newPage);
-    window.history.pushState(null, "", newPage);
   };
 
   useEffect(() => {
@@ -39,25 +54,23 @@ function App() {
   return (
     <>
       <Drawer
+        ref={drawerRef}
         isOpen={isMenuOpen}
         openFrom="top"
         onClose={() => setMenuOpen(false)}
       >
-        <ul>
-          <li>about</li>
-          <li>resume</li>
-        </ul>
+        <Navlist route={handleMenuSelection} page={page} />
       </Drawer>
       <Header
         route={changePage}
         page={page}
         openMenu={() => setMenuOpen(true)}
       />
-      {page === "about" && <About />}
+      {page === "about" && <About route={changePage} />}
       {page === "resume" && <Resume />}
       {page === "projects" && <Projects />}
       {page === "contact" && <Contact />}
-      <Footer/>
+      <Footer />
     </>
   );
 }
