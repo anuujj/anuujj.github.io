@@ -94,7 +94,6 @@
 @media (max-width: 1000px) {
   .experienceTab {
     grid-template-columns: 1fr;
-    padding: 2rem 2rem;
   }
   .techSkills {
     padding: 2rem;
@@ -102,6 +101,9 @@
 }
 
 @media (min-width: 1000px) {
+    .experienceTab{
+        padding: 2rem;
+    }
   .techSkills ul {
     grid-template-columns: 1fr 1fr 1fr;
   }

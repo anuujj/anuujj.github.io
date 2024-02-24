@@ -1,0 +1,39 @@
+.contact{
+    background-color: #fff;
+    width: 80%;
+    margin-top: 5rem;
+    padding: 7rem 5rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+.contact input, .contact textarea{
+    color:#0b50ff;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    resize: none;
+}
+.contact label{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#message {
+    width: 100%;
+    height: 20rem;
+    resize: none;
+}
+.submitBtn{
+    color: #fff;
+    background-color: #0b50ff;
+    margin-right: 1rem;
+    border-radius: 100px;
+    width: 12rem;
+    height: 3.5rem;
+}
+@media (max-width: 1000px) {
+    .contact{
+        padding: 2rem;
+    }
+}
