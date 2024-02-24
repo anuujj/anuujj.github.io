@@ -93,6 +93,12 @@
 }
 @media (max-width: 1000px) {
   .experienceTab {
+    padding: 2rem;
+  }
+  .techSkills {
+    padding: 2rem;
+  }
+  .experienceTab {
     grid-template-columns: 1fr;
   }
   .techSkills {
@@ -101,9 +107,6 @@
 }
 
 @media (min-width: 1000px) {
-    .experienceTab{
-        padding: 2rem;
-    }
   .techSkills ul {
     grid-template-columns: 1fr 1fr 1fr;
   }

@@ -4,3 +4,17 @@
   font-size: 10px;
 }
 
+.handles{
+  display: flex;
+  justify-content: center;
+}
+.handles ul{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: inherit;
+}
+.handles img{
+  height: 2.5rem;
+  width: 2.5rem;
+}

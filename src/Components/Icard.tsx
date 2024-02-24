@@ -10,7 +10,7 @@ export default function Icard() {
       <div className="ruler"></div>
       <h2 className="designation">Software Engineer</h2>
       <Shortcut className="fromIdCard"/>
-      <Handles/>
+      <Handles className="handleIdCard"/>
     </div>
   );
 }

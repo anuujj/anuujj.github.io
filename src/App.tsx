@@ -6,6 +6,7 @@ import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Drawer from "./Components/Drawer";
+import Footer from "./Components/Footer";
 
 function App() {
   const validPages = ["about", "resume", "projects", "contact"];
@@ -56,6 +57,7 @@ function App() {
       {page === "resume" && <Resume />}
       {page === "projects" && <Projects />}
       {page === "contact" && <Contact />}
+      <Footer/>
     </>
   );
 }

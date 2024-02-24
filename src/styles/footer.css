@@ -1,0 +1,22 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding:  2rem 4rem;
+    font-size: 1.4rem;
+  }
+  .handleFooter{
+    justify-content: flex-start;
+  }
+  .handleFooter li{
+    margin-right: 0.8rem;
+  }
+  @media (max-width:1000px){
+    footer{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 350px ) {
+    footer{
+        grid-template-columns: 1fr;
+    }
+  }

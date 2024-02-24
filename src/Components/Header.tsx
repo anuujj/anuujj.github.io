@@ -9,6 +9,7 @@ export default function Header({
   openMenu : ()=>void;
 }) {
   return (
+    <div className="headerContainer">
     <header>
       <div className="heading">
         <h1 className="name">Anuj</h1>
@@ -29,5 +30,6 @@ export default function Header({
         </ul>
       </nav>
     </header>
+    </div>
   );
 }
