@@ -1,89 +1,85 @@
-.headerContainer{
-    position: sticky;
-    top:0;
-    left:0;
-    background-color: #fff;
-    z-index: 1;
+.headerContainer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 4.8rem;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.8rem;
 }
-.heading{
-    display: flex;
-    align-items: flex-end;
+.heading {
+  display: flex;
+  align-items: flex-end;
 }
-.hamburger{
-    display: none;
+.hamburger {
+  display: none;
 }
-@media (max-width: 1000px){
-    header{
-        padding: 1.6rem 3rem;
-    }
-    .heading{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-    }
-    .name{
-        line-height: 1.5;
-    }
-    .slash{
-        display: none;
-    }
-    .hamburger{
-        display: block;
-        position: relative;
-        grid-row: 1/3;
-        grid-column: 2;
-        height:100%;
-    }
-    .hamburger button{
-        position: absolute;
-        top:0;
-        right:0;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        padding: 0;
-        background-color: transparent;
-    }
-    .hamburger button img{
-        position: absolute;
-        top:0;
-        right:0;
-        display: block;
-        height: inherit;
-        width: inherit;
-    }
-    nav{
-        display: none;
-    }
-}
-nav ul{
+@media (max-width: 1000px) {
+  header {
+    padding: 1.6rem 3rem;
+  }
+  .heading {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 2rem;
-    padding-top:8px;
-    font-size: 1.3rem;
-    font-weight: 300;
-}
-nav ul li:hover, nav ul li a:focus{
-    color: #8EB0FF;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  .name {
+    line-height: 1.5;
+  }
+  .slash {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: relative;
+    grid-row: 1/3;
+    grid-column: 2;
+    height: 100%;
+  }
+  .hamburger button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
+    padding: 0;
+    background-color: transparent;
+  }
+  .hamburger button img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: inherit;
+    width: inherit;
+  }
+  nav {
+    display: none;
+  }
 }
-.slash{
-    margin: 0 1rem;
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 1.1;
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
+  padding-top: 8px;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
-.heading h1::before{
-    content:"";
-    margin-right: 1rem;
-    display: inline-block;
-    height: 1.6rem;
-    width: 1.6rem;
-    background-color: #0B50FF;
+.slash {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.1;
+}
+.heading h1::before {
+  content: "";
+  margin-right: 1rem;
+  display: inline-block;
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #0b50ff;
 }

@@ -2,16 +2,16 @@ import Icard from "../Components/Icard";
 import Shortcut from "../Components/Shortcut";
 import "../styles/about.css";
 
-export default function About() {
+export default function About({ route }: { route: (page: string) => void }) {
   return (
     <div className="about">
       <div className="icardContainer">
-        <Icard />
+        <Icard route={route} />
       </div>
       <div className="sectionContainer">
         <section>
           <h1>Hello 👋</h1>
-          <Shortcut className="fromAbout" />
+          <Shortcut className="fromAbout" route={route} />
           <article>
             I am currently working as a Software Developer at Paytm, a leading
             fintech company in India. With over 1.5+ years of experience in
