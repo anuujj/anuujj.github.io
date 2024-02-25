@@ -5,7 +5,7 @@ export default function Handles({ className }: { className: string }) {
         <li>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/anuj-singh-9b7a5a1a0/"
+            href="https://www.linkedin.com/in/anuj18-kumar/"
           >
             <img src="linkedin.svg" alt="linkedin" />
           </a>
@@ -13,7 +13,7 @@ export default function Handles({ className }: { className: string }) {
         <li>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/anuj-singh-9b7a5a1a0/"
+            href="https://twitter.com/anxuj"
           >
             <img src="twitter.svg" alt="X(twitter)" />
           </a>
@@ -21,7 +21,7 @@ export default function Handles({ className }: { className: string }) {
         <li>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/anuj-singh-9b7a5a1a0/"
+            href="https://github.com/anuujj"
           >
             <img src="github.svg" alt="github" />
           </a>
@@ -29,7 +29,7 @@ export default function Handles({ className }: { className: string }) {
         <li>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/anuj-singh-9b7a5a1a0/"
+            href="https://www.instagram.com/anuj_kumar220/"
           >
             <img src="instagram.svg" alt="instagram" />
           </a>
