@@ -5,19 +5,19 @@ export default function Projects() {
     {
       name: "Project 1",
       description:
-        "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, odio sed dictum congue, elit metus viverra nisi, id tempus eros velit id justo. Nullam scelerisque vestibulum leo. Integer commodo sapien sit amet mauris ultricies varius. Fusce euismod fermentum ",
       img: ["", "", ""],
     },
     {
       name: "Project 2",
       description:
-        "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, odio sed dictum congue, elit metus viverra nisi, id tempus eros velit id justo. Nullam scelerisque vestibulum leo. Integer commodo sapien sit amet mauris ultricies varius. Fusce euismod fermentum ",
       img: ["", "", ""],
     },
     {
       name: "Project 3",
       description:
-        "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus, odio sed dictum congue, elit metus viverra nisi, id tempus eros velit id justo. Nullam scelerisque vestibulum leo. Integer commodo sapien sit amet mauris ultricies varius. Fusce euismod fermentum ",
       img: ["", "", ""],
     },
   ];

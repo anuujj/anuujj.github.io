@@ -17,7 +17,7 @@
   border-radius: 50%;
   width: 20rem;
   height: 20rem;
-  background-image: url("../../public/pfp.jpg");
+  background-image: url("pfp.jpg");
   background-size: cover;
 }
 .ruler {

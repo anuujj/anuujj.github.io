@@ -7,7 +7,7 @@ const experience = [
     title: "Software Developer",
     company: "Paytm",
     location: "Noida, India",
-    description: `Working as a Software Developer at Paytm, a leading fintech company in India. With over 1.5+ years of experience in frontend development, Anuj possesses a robust skill set that includes expertise in HTML, CSS, JavaScript/TypeScript, and proficiency in frameworks such as React. His work experience extends to an agile environment, where he has demonstrated his abilities in adapting to dynamic development processes. He is well-versed in CI/CD pipelines. He has experience in building robust web pages for scale.`,
+    description: `Developed a web-app for 13k+ field service agents (FSE) to view their incentives and task history. This reduced incentive visibility wait from T+10 to T+1 days. Reduced number of incentive queries raised to 5%, thus reducing manual efforts of the stakeholders. Reduced Attrition from 30% MOM to 25%. Developed an admin panel for business team to create salary plans for field agents. Reduced manual payout effort by 70 %.`,
   },
 ];
 const education = [
@@ -16,7 +16,7 @@ const education = [
     title: "B.Tech",
     company: "Indraprastha Institute of Information Technology, Delhi",
     location: "Delhi, India",
-    description: `B.Tech in Computer Science and Applied Mathematics`,
+    description: `I have graduated from Indraprastha Institute of Information Technology, Delhi in Computer Science and Applied Mathematics. I got a strong hold over fundamentals like Data Structures and Algorithms, Object Oriented Programming, Discrete Mathematics, Operating Systems, Network Security`,
   },
 ];
 export default function Resume() {
@@ -55,8 +55,11 @@ export default function Resume() {
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript/TypeScript</li>
-            <li>React</li>
-            <li>CI/CD Pipelines</li>
+            <li>React Js</li>
+            <li>Redux Toolkit</li>
+            <li>Java</li>
+            <li>MongoDB</li>
+            <li>Jenkins</li>
           </ul>
           <h3>Languages</h3>
           <ul>

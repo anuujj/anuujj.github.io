@@ -65,6 +65,7 @@
 }
 .experienceTab p {
   font-size: 1.6rem;
+  margin-bottom: 2rem;
 }
 .eduHeading {
   align-self: flex-start;
@@ -74,6 +75,9 @@
   width: 100%;
   background-color: #fff;
   padding: 5rem;
+  padding-bottom: 6rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+    0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
 }
 .techSkills h3 {
   font-size: 2.4rem;
@@ -94,15 +98,12 @@
 @media (max-width: 1000px) {
   .experienceTab {
     padding: 2rem;
-  }
-  .techSkills {
-    padding: 2rem;
-  }
-  .experienceTab {
+    margin-bottom: 2rem;
     grid-template-columns: 1fr;
   }
   .techSkills {
     padding: 2rem;
+    padding-bottom: 5rem;
   }
 }
 
