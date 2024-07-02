@@ -14,7 +14,7 @@ export default function About({ route }: { route: (page: string) => void }) {
           <Shortcut className="fromAbout" route={route} />
           <article>
             I am currently working as a Software Developer at Paytm, a leading
-            fintech company in India. With over 1.5+ years of experience in
+            fintech company in India. With over 2+ years of experience in
             frontend development, I possess a robust skill set that includes
             expertise in HTML, CSS, JavaScript/TypeScript, and proficiency in
             frameworks such as React. My work experience extends to an agile

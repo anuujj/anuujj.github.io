@@ -31,12 +31,15 @@
 .expHeading h3 {
   font-size: 2.4rem;
 }
-.expHeading button {
+.expHeading a {
   background-color: #0b50ff;
   color: #fff;
   border-radius: 100px;
   width: 15rem;
   height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .experienceTab {
   display: grid;

@@ -3,7 +3,7 @@ import "../styles/resume.css";
 
 const experience = [
   {
-    date: "June 2021 - Present",
+    date: "June 2022 - Present",
     title: "Software Developer",
     company: "Paytm",
     location: "Noida, India",
@@ -26,7 +26,12 @@ export default function Resume() {
         <h1>Resume</h1>
         <div className="expHeading">
           <h3>Experience</h3>
-          <button>DOWNLOAD CV</button>
+          <a
+            href="https://drive.google.com/file/d/1onm2Aa07E5qf2mrioQzliHX-e1d2zEZg/view?usp=drive_link"
+            target="resume"
+          >
+            DOWNLOAD CV
+          </a>
         </div>
         {experience.map((exp) => (
           <Experience
