@@ -69,7 +69,7 @@ function App() {
       {page === "about" && <About route={changePage} />}
       {page === "resume" && <Resume />}
       {page === "projects" && <Projects />}
-      {page === "contact" && <Contact />}
+      {page === "contact"  && <Contact />}
       <Footer />
     </>
   );
