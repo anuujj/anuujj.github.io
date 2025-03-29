@@ -3,7 +3,14 @@ import "../styles/resume.css";
 
 const experience = [
   {
-    date: "June 2022 - Present",
+    date: "September 2024 - Present",
+    title: "Senior Software Engineer",
+    company: "Parspec",
+    location: "Bengaluru, India",
+    description: `Developed a web-app for aiding procurement of construction materials. An easy and quick to use UI for distributors to generate BOMs and quote faster and win more business. I am responsible for building and maintaining the frontend of the app. We are using React, React Query, React Router, Material design and TypeScript.`,
+  },
+  {
+    date: "June 2022 - September 2024",
     title: "Software Developer",
     company: "Paytm",
     location: "Noida, India",

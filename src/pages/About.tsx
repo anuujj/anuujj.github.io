@@ -13,9 +13,8 @@ export default function About({ route }: { route: (page: string) => void }) {
           <h1>Hello 👋</h1>
           <Shortcut className="fromAbout" route={route} />
           <article>
-            I am currently working as a Software Developer at Paytm, a leading
-            fintech company in India. With over 2+ years of experience in
-            frontend development, I possess a robust skill set that includes
+            I am currently working as a Senior Software Engineer at Parspec, a construction-tech startup based out of USA. With over 2.5+ years of 
+            experience in frontend development, I possess a robust skill set that includes
             expertise in HTML, CSS, JavaScript/TypeScript, and proficiency in
             frameworks such as React. My work experience extends to an agile
             environment, where I have demonstrated my abilities in adapting to
